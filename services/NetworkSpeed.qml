@@ -46,7 +46,7 @@ Singleton {
     Process {
         id: netstat
 
-        command: ["sh", "-c", "cat /proc/net/dev | grep -v 'lo:' | awk 'NR>2 {rx+=$2; tx+=$10} END {print rx, tx}'"]
+        command: ["sh", "-c", "awk 'NR > 2 {split($1, a, \":\"); if (a[1] != \"lo\") {rx += $2; tx += $10}} END {if (NR > 2) print rx, tx; else print \"0 0\"}' /proc/net/dev"]
         stdout: StdioCollector {
             onStreamFinished: {
                 const parts = text.trim().split(/\s+/);
