@@ -38,6 +38,10 @@ JsonObject {
             enabled: true
         },
         {
+            id: "netspeed",
+            enabled: true
+        },
+        {
             id: "clock",
             enabled: true
         },

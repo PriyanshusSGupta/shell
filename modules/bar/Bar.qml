@@ -159,6 +159,12 @@ ColumnLayout {
                 }
             }
             DelegateChoice {
+                roleValue: "netspeed"
+                delegate: WrappedLoader {
+                    sourceComponent: NetworkSpeed {}
+                }
+            }
+            DelegateChoice {
                 roleValue: "power"
                 delegate: WrappedLoader {
                     sourceComponent: Power {
@@ -173,6 +179,8 @@ ColumnLayout {
         required property bool enabled
         required property string id
         required property int index
+        
+
 
         function findFirstEnabled(): Item {
             const count = repeater.count;
