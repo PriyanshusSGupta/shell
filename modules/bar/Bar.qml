@@ -166,6 +166,12 @@ ColumnLayout {
                     }
                 }
             }
+            DelegateChoice {
+                roleValue: "netspeed"
+                delegate: WrappedLoader {
+                    sourceComponent: NetSpeed {}
+                }
+            }
         }
     }
 
