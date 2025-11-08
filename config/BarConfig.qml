@@ -21,6 +21,11 @@ JsonObject {
             id: "workspaces",
             enabled: true
         },
+        
+        {
+            id: "media",
+            enabled: true
+        },
         {
             id: "spacer",
             enabled: true
@@ -41,10 +46,10 @@ JsonObject {
             id: "clock",
             enabled: true
         },
-        {
-            id: "statusIcons",
-            enabled: true
-        },
+        // {
+        //     id: "statusIcons",
+        //     enabled: true
+        // },
         {
             id: "power",
             enabled: true

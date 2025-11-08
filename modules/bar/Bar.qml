@@ -141,6 +141,14 @@ ColumnLayout {
                 }
             }
             DelegateChoice {
+                roleValue: "media"
+                delegate: WrappedLoader {
+                    sourceComponent: Media {
+                        bar: root
+                    }
+                }
+            }
+            DelegateChoice {
                 roleValue: "tray"
                 delegate: WrappedLoader {
                     sourceComponent: Tray {}

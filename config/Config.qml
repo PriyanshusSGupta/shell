@@ -31,7 +31,7 @@ Singleton {
     }
 
     FileView {
-        path: `${Paths.config}/shell.json`
+        // path: `${Paths.config}/shell.json`
         watchChanges: true
         onFileChanged: {
             timer.restart();

@@ -1,0 +1,38 @@
+{
+  "colorMap": {
+    "Appearance.colors.colPrimary": "Colours.palette.m3primary",
+    "Appearance.colors.colOnPrimary": "Colours.palette.m3onPrimary",
+    "Appearance.colors.colPrimaryContainer": "Colours.palette.m3primaryContainer",
+    "Appearance.colors.colOnPrimaryContainer": "Colours.palette.m3onPrimaryContainer",
+
+    "Appearance.colors.colSecondary": "Colours.palette.m3secondary",
+    "Appearance.colors.colOnSecondary": "Colours.palette.m3onSecondary",
+    "Appearance.colors.colSecondaryContainer": "Colours.palette.m3secondaryContainer",
+    "Appearance.colors.colOnSecondaryContainer": "Colours.palette.m3onSecondaryContainer",
+
+    "Appearance.colors.colTertiary": "Colours.palette.m3tertiary",
+    "Appearance.colors.colOnTertiary": "Colours.palette.m3onTertiary",
+
+    "Appearance.colors.colLayer1": "Colours.tPalette.m3surfaceContainer",
+    "Appearance.colors.colOnLayer1": "Colours.palette.m3onSurfaceVariant",
+    "Appearance.colors.colLayer2": "Colours.tPalette.m3surfaceContainerHigh",
+    "Appearance.colors.colOnLayer2": "Colours.palette.m3onSurface",
+
+    "Appearance.colors.colOutline": "Colours.palette.m3outline",
+    "Appearance.colors.colOnLayer1Inactive": "Colours.palette.m3onSurfaceVariant",
+
+    "Appearance.colors.colSurface": "Colours.palette.m3surface",
+    "Appearance.colors.colOnSurface": "Colours.palette.m3onSurface",
+
+    "Appearance.colors.colPrimaryHover": "(prefer ColourUtils.mix with Colours.palette.m3primary and tPalette or use Colours.palette.m3primary)",
+
+    "Appearance.m3colors.m3primary": "Colours.palette.m3primary",
+    "Appearance.m3colors.m3onPrimary": "Colours.palette.m3onPrimary"
+  },
+  "notes": {
+    "purpose": "Maps color tokens used by end4/ii Appearance to Caelestia's Colours/Colours.tPalette equivalents.",
+    "usage": "Use this file as a lookup when porting components: replace Appearance.colors.* with the mapped Colours.* value. Add fallbacks (literal hex) if needed when singletons may be undefined at load time.",
+    "author": "copilot",
+    "caution": "Some tokens are conceptually different (layer vs palette). Verify visually after replacement and prefer tPalette for layered/transparent variants, palette for core M3 values. If you see a missing token, add it here before editing QML files."
+  }
+}
